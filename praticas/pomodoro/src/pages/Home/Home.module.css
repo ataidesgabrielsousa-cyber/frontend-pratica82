@@ -1,0 +1,199 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a2e;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 480px;
+}
+
+.title {
+  color: #e94560;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.btnLogout {
+  background: none;
+  border: 1px solid #0f3460;
+  color: #a8b2d8;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.875rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.btnLogout:hover {
+  border-color: #e94560;
+  color: #e94560;
+}
+
+.modes {
+  display: flex;
+  gap: 0.5rem;
+  background-color: #16213e;
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+.modeBtn {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  color: #a8b2d8;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.modeBtn:hover {
+  color: #e6e6e6;
+  background-color: #0f3460;
+}
+
+.modeActive {
+  padding: 0.5rem 1rem;
+  background-color: #e94560;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Anel de progresso */
+.timerWrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.timerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  z-index: 1;
+}
+
+.timer {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #e6e6e6;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+.modeLabel {
+  font-size: 0.875rem;
+  color: #a8b2d8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Controles */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btnStart {
+  padding: 0.875rem 3rem;
+  background-color: #e94560;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  letter-spacing: 1px;
+}
+
+.btnStart:hover {
+  background-color: #c73652;
+  transform: scale(1.03);
+}
+
+.btnReset,
+.btnSkip {
+  width: 48px;
+  height: 48px;
+  background-color: #16213e;
+  border: 1px solid #0f3460;
+  color: #a8b2d8;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnReset:hover,
+.btnSkip:hover {
+  border-color: #e94560;
+  color: #e94560;
+}
+
+/* Contador de pomodoros */
+.pomodoroCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.countLabel {
+  color: #a8b2d8;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #0f3460;
+  border: 1px solid #a8b2d8;
+}
+
+.dotFilled {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e94560;
+  border: 1px solid #e94560;
+}
